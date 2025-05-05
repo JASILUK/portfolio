@@ -1,0 +1,458 @@
+body{
+    margin: 0;
+    box-sizing: border-box; 
+}
+.globel{
+    background:linear-gradient(to right,rgb(30, 27, 36),rgb(54, 33, 103));
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-100px);
+    animation: front 1s  forwards;
+    opacity: 0;
+
+}
+@keyframes front{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.navbar{
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    display: flex; 
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+    background-image: linear-gradient(to right, rgb(30, 27, 36), rgb(54, 33, 103));  
+    background-color: rgba(0, 0, 0, 0.6) ;    
+    z-index: 2 ;
+}
+
+.navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+ 
+}
+.navlist a:hover{
+    border-bottom:1px solid white;
+    color: rgb(230, 222, 222);
+}
+
+.navlist a{
+    text-decoration: none;
+    display: flex;
+    width: 100px;
+    height: 50px;      
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    
+}
+.navbar  a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    
+
+
+}   
+.homebdy{
+    height:100%;
+    display: flex;
+}
+.homee{
+    width: 50%;
+    height: 100%;
+    margin: 10px; 
+}
+.homedata{
+    color: rgb(214, 214, 225);
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 25%;
+}
+.homedata h1,h2,p{
+    margin: 0;
+}
+.homedata h1{
+    font-size: 65px;
+}
+.homedata h2{
+    font-size: 50px;
+}
+
+   .profile{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 50%;
+    position: relative;
+   }
+   .prfone{
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background:#2E1F50;
+    left: 0;
+    top: 7%;
+   }
+   .prftwo{
+    position: absolute;
+    width: 350px;
+    height:350px ;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    left: 4%;
+    top: 3%;
+
+   }
+   .prfthree{
+    position: absolute;
+    width: 330px;
+    height:330px ;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    left: 4%;
+    top: 3%;
+    border: 11px solid #2E1F50;
+    overflow: hidden;
+    
+   }
+   .about{
+    height: 100vh;
+    background:white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+    
+   }
+.aboutcontent{
+    width: 80%;
+    height: 80%;
+    border: 5px solid rgb(47, 33, 126);
+    box-shadow: 5px 5px  5px rgb(193, 191, 191);
+    position: relative;
+}
+.ableft{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background:white;
+    left: -5px;
+    top: -5px;
+    border-bottom-right-radius: 100% ;
+    border-bottom: 5px solid   rgb(47, 33, 126);
+
+}
+.abhead{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color:rgb(142, 103, 199);
+    
+}
+.abtcontent{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.skill{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right,rgb(30, 27, 36),rgb(54, 33, 103));
+    display: flex;
+    align-items: center;
+
+}
+.skilldata{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+}
+.skillhead{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.skillset{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top:3% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tool{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    background-color: rgba(132, 126, 218,0.1);
+}
+.html{
+    width: 150px;
+    height: 100%;
+    
+}
+.rang{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+   
+}
+.rpar{
+    width: 95%;
+    height: 30px;
+    background-color:rgb(130, 146, 190) ;
+    border-radius: 25px;
+}
+.skill :hover .growrange {
+width: 90%;
+}
+.skill :hover .rangeone {
+    width: 80%;
+    }
+.skill :hover .rangetwo {
+        width: 70%;
+        }
+.ranger{
+    width: 0;
+    background-color: rgb(251, 249, 255);
+    height: 30px;
+    border-radius: 25px;
+    transition: width 1s linear;
+}
+.numrange{
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.html{
+    display: flex;
+    flex-direction: column;
+}
+.hlogo{
+    width: 100%;
+    height: 70%;
+}
+.hname{
+    width: 100%;
+    height: 30%;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hlogo img{
+object-fit:contain;
+height: 100%;
+width: 100%;
+}
+.portfolio{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.porthead{
+    width: 50%;
+    height: 80px;
+    margin: auto;
+   color: rgb(45, 31, 125);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    transform: scale(.8) translateY(10px);
+    opacity: 0.5;
+    animation: inout 1s linear forwards;
+}
+@keyframes inout{
+    to{
+        opacity: 1;
+        transform: scale(1) translate(0);
+    }
+}
+.porttools{
+    width: 90%;
+    height: 80%;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects {
+    width: 30%;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    border: solid 3px rgb(59, 26, 130);
+    box-shadow: 5px 5px 25px rgb(98, 75, 147);
+    overflow: hidden; 
+    border-radius: 10px;
+    margin-top: 7%;
+   
+    
+}
+.projoani{
+    opacity: 0.5;
+    transform: scale(0.9);
+    animation: promax 1s ease forwards;
+    animation-delay: 0.2s; 
+    transition: transform 0.3s ease;
+}
+@keyframes promax{
+    to{
+        opacity: 1;
+       transform: scale(1);
+    } 
+}
+
+.projects:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+
+.prone {
+    width: 100%;
+    height: 70%;
+    flex-shrink: 0;
+}
+
+.prtwo {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(46, 31, 80, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.prone a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.prone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right,rgb(30, 27, 36),rgb(54, 33, 103));
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+.contdat{
+    width: 90%;
+    height: 85%;
+    
+    display: flex;
+    margin: auto;   
+    border: 1px solid rgb(191, 178, 178);
+}
+.conc{
+    width: 50%;
+    height: 100%;
+   
+}
+.contright{
+    display: flex;
+    flex-direction: column;  
+    justify-content:space-evenly;
+   align-items: center;
+}
+.block{
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    border: solid 1px transparent;
+
+}
+label{
+    margin-left:38px;
+    color: rgb(255, 241, 224);
+   
+}
+.contleft{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding-top:70px;
+    font-size: 20px;
+    padding-left: 30px;
+
+}
+.leftdata{
+    width: 80%;
+    height:auto;
+    margin-top: 20px;
+    color: white;
+
+}
+#leftlg{
+    width: 300px;
+   background-color: rgba(240, 248, 255,0.7);
+    height: 50px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+#leftlg div{
+width:50px;
+height: 100%;
+overflow: hidden;
+}
+#leftlg img{
+    object-fit: contain;
+    width:40px;
+    height: 50px;
+}
