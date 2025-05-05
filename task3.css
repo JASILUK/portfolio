@@ -1,0 +1,39 @@
+
+*{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.formm{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+justify-content: center;
+align-items: center;    
+
+}
+.frm{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+    
+    background-color: rgb(2, 2, 83);
+
+    
+}
+input{
+    background-color: rgb(171, 208, 219);
+    color: black;
+}
+input::placeholder{
+    color: black;
+    opacity: 1;
+}
+#submit:active{
+    background-color: aliceblue;
+
+}
